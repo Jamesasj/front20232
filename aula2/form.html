@@ -8,27 +8,28 @@
 </head>
 
 <body>
-    <div style="
-        background-color: #bdc3c7;
-        padding: 12px;
-        ">
-        <div style="margin: 12px;">
-            <label for="nmAluno">Nome</label>
-            <input type="text" name="nmAluno" id="nmAluno">
+    <div id="modal1" style="
+            background-color: #bdc3c7;
+            padding: 12px;
+            ">
+            <img src="https://unisales.br/wp-content/uploads/2020/03/logo.svg" alt="">
+            <div class="combo">
+                <label for="nmAluno">Nome</label>
+                <input type="text" name="nmAluno" id="nmAluno">
+            </div>
+            <div class="combo">
+                <label for="nrAluno">Matricula</label>
+                <input type="number" name="nrAluno" id="nrAluno">
+            </div>
+            <div class="combo">
+                <label for="dtNascAluno">Dt. Nascimento</label>
+                <input type="date" name="dtNascAluno" id="dtNascAluno">
+            </div>
+            <div class="navbar">
+                <button type="submit">Salvar</button>
+                <button>Cancelar</button>
+            </div>
         </div>
-        <div style="margin: 12px;">
-            <label for="nrAluno">Matricula</label>
-            <input type="number" name="nrAluno" id="nrAluno">
-        </div>
-        <div style="margin: 12px;">
-            <label for="dtNascAluno">Dt. Nascimento</label>
-            <input type="date" name="dtNascAluno" id="dtNascAluno">
-        </div>
-        <div>
-            <button>Salvar</button>
-            <button>Cancelar</button>
-        </div>
-    </div>
-</body>
-
-</html>
+        <link rel="stylesheet" href="estilo.css">
+    </body>
+    </html>

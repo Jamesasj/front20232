@@ -1,0 +1,24 @@
+div#modal1 {
+    border: 1px solid #e74c3c;
+    border-radius: 8px;
+    padding: 2px
+}
+
+div#modal1>div.navbar {
+    border: 1px #e74c3c solid;
+    border-radius: 8px;
+    padding: 2px;
+    display: flex;
+    flex: 1;
+    /* flex-direction: row; */
+    justify-content: center;
+    justify-content: space-around;
+}
+
+div#modal1>div.combo {
+    border: 1px #1abc9c solid;
+    margin: 12px;
+    display: grid;
+    padding: 4px;
+    border-radius: 8px;
+}
