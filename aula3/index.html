@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <div class="msg_area">
+            <span>Aqui estara a nossa mensagem</span>
+        </div>
+        <div>
+            <div class="combo">
+                <label for="name"></label>
+                <input type="text" name="name" id="name" placeholder="name">
+            </div>
+        </div>
+        <div class="navbar">
+            <button>mensagem 1</button>
+            <button>mensagem 2</button>
+            <button>mensagem 3</button>
+            <button>mensagem 4</button>
+        </div>
+    </div>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function aoclicar(e){
+            let nameUserElem = document.querySelector('#name');
+            const nameUser = nameUserElem.value
+            let variavel = document.querySelector('.msg_area span');
+            variavel.innerHTML = `clicou na ${e.target.innerHTML} ${nameUser}`;
+        }
+
+        const vetorObjs = document.querySelectorAll('button');
+        vetorObjs.forEach(elem =>{
+            elem.onclick = aoclicar;
+        })
+    </script>
+</body>
+
+</html>

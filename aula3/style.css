@@ -1,0 +1,50 @@
+#container {
+    background-color: #95a5a6;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    margin: 12px;
+    border-radius: 12px;
+}
+
+#container>* {
+    margin: 12px;
+    padding: 12px;
+    border: #000 1px solid;
+    border-radius: 12px;
+}
+
+.msg_area {
+    background-color: #bdc3c7;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+button {
+    background-color: #2980b9;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1abc9c;
+    color: #f5f5f5;
+}
+
+.gradreheader {
+    display: flex;
+    flex-direction: row;
+}
+
+.gradecontent>.row>div {
+    padding: 0px 4px;
+}
+
+.gradecontent>.row {
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+}

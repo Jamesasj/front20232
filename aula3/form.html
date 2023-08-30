@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div>
+            <div class="combo">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" placeholder="name">
+            </div>
+
+            <div class="combo">
+                <label for="dtnasc">Dt. Nascimento</label>
+                <input type="date" name="name" id="dtnasc" placeholder="dtnasc">
+            </div>
+        </div>
+
+
+        <div class="navbar">
+            <button>Incluir</button>
+        </div>
+        <div class="tabela">
+            <div class="gradreheader">
+                <div>nome</div>
+                <div>dt. nascimento</div>
+            </div>
+            <div class="gradecontent">
+
+            </div>
+        </div>
+
+
+    </div>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function aoclicar(e) {
+            const nameUserElem = document.querySelector('#name');
+            const nameUser = nameUserElem.value
+            const dtUserElem = document.querySelector('#dtnasc');
+            const dtUser = dtUserElem.value
+            const grade = document.querySelector('.gradecontent')
+            grade.innerHTML += `<div class=row><div>${nameUser} </div><div> ${dtUser} </div><div><button>remover</button></div> </div>`
+
+        }
+
+        const vetorObjs = document.querySelectorAll('button');
+        vetorObjs.forEach(elem => {
+            elem.onclick = aoclicar;
+        })
+    </script>
+</body>
+
+</html>

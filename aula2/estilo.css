@@ -22,3 +22,36 @@ div#modal1>div.combo {
     padding: 4px;
     border-radius: 8px;
 }
+
+button{
+    background-color: #1abc9c;
+    color: aliceblue;
+    cursor: pointer;
+}
+button:hover{
+    background-color: red !important;
+}
+
+#modal1 > div:last-child{
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
