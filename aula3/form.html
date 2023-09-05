@@ -27,6 +27,7 @@
         <div class="navbar">
             <button>Incluir</button>
         </div>
+
         <div class="tabela">
             <div class="gradreheader">
                 <div>nome</div>
@@ -47,7 +48,12 @@
             const dtUserElem = document.querySelector('#dtnasc');
             const dtUser = dtUserElem.value
             const grade = document.querySelector('.gradecontent')
-            grade.innerHTML += `<div class=row><div>${nameUser} </div><div> ${dtUser} </div><div><button>remover</button></div> </div>`
+            grade.innerHTML += `
+                <div class=row>
+                    <div>${nameUser} </div>
+                    <div> ${dtUser} </div>
+                    <div><button>remover</button></div> 
+                </div>`
 
         }
 
