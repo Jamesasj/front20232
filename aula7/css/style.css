@@ -1,0 +1,24 @@
+div.container {
+    padding: 12px;
+}
+
+.form {
+    padding: 12px;
+}
+
+.table {
+    padding: 24px;
+}
+
+.table > button {
+    margin: 8px;
+}
+
+.combo {
+    border: 1px black solid;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    margin: 12px;
+    border-radius: 12px;
+}
