@@ -1,0 +1,12 @@
+.container{
+    padding: 24px;
+}
+
+.combo{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px #000;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 4px;
+}
